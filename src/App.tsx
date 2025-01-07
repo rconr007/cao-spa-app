@@ -1,7 +1,7 @@
 import './App.css'
 import CaoBadge from './components/CaoBadge'
-import AdvantagesBanner from './components/AdvantagesBanner'
-import BrandLogo from './components/BrandLogo'
+// import AdvantagesBanner from './components/AdvantagesBanner'
+// import BrandLogo from './components/BrandLogo'
 import Brand from './components/Brand'
 import { TileBanner } from './components/TileBanner'
 
