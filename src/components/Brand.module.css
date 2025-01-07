@@ -1,0 +1,24 @@
+/* src/components/Brand.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.brandContainer {
+    position: relative; /* Needed for absolute positioning of the logo */
+  }
+  
+  .brandName {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: white;
+    position: relative; /* Needed for positioning the logo */
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  .logoContainer {
+    /* position: absolute; */
+    /* top: 0.05rem; Adjust as needed to position the logo */
+    /* left: 7.8rem; Adjust to align with the first "O" */
+    width: 32px; /* Adjust size as needed */
+    height: 32px; /* Adjust size as needed */
+  }

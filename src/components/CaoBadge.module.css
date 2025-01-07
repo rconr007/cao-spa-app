@@ -1,0 +1,65 @@
+.badgeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 50vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.badgeWrapper {
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+}
+
+.logoSvg {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.rotatingGroup {
+  animation: spin 6s linear infinite;
+  transform-origin: 262px 250px;
+}
+
+.paused {
+  animation-play-state: paused;
+}
+
+.innerLogo {
+  transform-origin: center;
+}
+
+.clickableCircle {
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.clickableCircle:hover {
+  filter: brightness(1.2);
+}
+
+.curvedText {
+  fill: #ffffff;
+  font-size: 10px;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+.curvedText textPath {
+  dominant-baseline: middle;
+}
+
+.caoBadge {
+  width: 100px; /* Set desired width */
+  height: 100px; /* Set desired height */
+  /* Other styles */
+}

@@ -1,0 +1,68 @@
+/* src/components/CircularDialog.module.css */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50; /* Ensure it is above other content */
+}
+
+.dialogContainer {
+    width: 23rem;
+    height: 23rem; /* Ensure height matches width */
+    background-color: white; /* White background for the dialog */
+    border-radius: 100%; /* Make it circular */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Positioning for header */
+    transition: all 0.3s ease; /* Smooth transition for size changes */
+    /* margin-left: -40px; */
+    top: -11vh;
+}
+
+.expanded {
+    width: 92vw; /* Expand to 95% of viewport width */
+    height: 92vh; /* Expand to 95% of viewport height */
+     top: 0px;
+    border-radius: 12px; /* Remove circular shape when expanded */
+}
+
+.dialogHeader {
+    position: absolute; /* Position buttons at the top */
+    top: 10px; /* Adjust as needed */
+    /*right: 10px;  Adjust as needed */
+}
+
+.buttonContainer {
+    display: flex; /* Align buttons in a row */
+    gap: 10px; /* Space between buttons */
+}
+
+.closeButton {
+    background: none;
+    border: 1px solid #636363; /* Border for close button */
+    border-radius: 100%;
+    width: 28px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #636363; /* Color for close button */
+}
+
+.expandButton {
+    background: none;
+    border: 1px solid #636363; /* Border for close button */
+    border-radius: 100%;
+    width: 28px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #636363; /* Color for expand button */
+}

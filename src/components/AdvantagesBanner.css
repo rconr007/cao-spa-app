@@ -1,0 +1,33 @@
+/* src/components/AdvantagesBanner.css */
+
+.banner-container {
+    width: 120%;
+    /* height: 80px;  Adjust height as needed */
+    overflow: hidden;
+    background-color: black; /* Background color of the banner */
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+  }
+  
+  .banner-content {
+    display: flex;
+    flex-wrap: nowrap;
+    animation: scroll 20s linear infinite; /* Adjust duration for speed */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%); /* Start off-screen to the right */
+    }
+    100% {
+      transform: translateX(-100%); /* End off-screen to the left */
+    }
+  }
+  
+  .advantage-item {
+    padding: 20px; /* Adjust padding as needed */
+    color: white; /* Text color */
+    font-weight: bold; /* Make text bold */
+    white-space: nowrap; /* Prevent line breaks */
+  }
